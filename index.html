@@ -3,25 +3,46 @@
 <head>
   <title>Yash Agarwal - Data Analytics Portfolio</title>
   <style>
+    /* Full screen setup */
     html, body {
+      height: 100%;
       margin: 0;
       padding: 0;
-      overflow: hidden; 
-      height: 100%;
-      width: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Scrollbars chupa dega */
     }
-    iframe {
-      width: 100%;
+    .hero-container {
+      background: url('portfolio-hero.png') no-repeat center center / cover;
       height: 100%;
+      width: 100%;
+      position: relative;
+    }
+    .cta-button {
+      position: absolute;
+      bottom: 10%; /* Button ki position bottom se upar */
+      left: 50%;
+      transform: translateX(-50%); /* Center mein rakhega */
+      padding: 12px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #A94A42; /* Aapke portfolio ke color jaisa */
       border: none;
+      border-radius: 5px;
+      text-decoration: none; /* Link ka underline hatayega */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+        background-color: #8C3A35;
     }
   </style>
 </head>
 <body>
-<iframe 
-  src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://yashagarwal28.github.io/portfolio.pdf" 
-  title="Data Analytics Portfolio" 
-  allowfullscreen>
-</iframe>
+  <div class="hero-container">
+    <a href="portfolio.pdf" target="_blank" class="cta-button">
+      View Full 10-Page Portfolio (PDF)
+    </a>
+  </div>
 </body>
 </html>
