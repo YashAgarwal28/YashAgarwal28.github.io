@@ -6,18 +6,20 @@
     html, body {
       margin: 0;
       padding: 0;
-      overflow: hidden; 
+      overflow: hidden; /* Scrollbars hata dega */
       height: 100%;
       width: 100%;
+      background-color: #000; /* Optional: Agar image load na ho toh black background */
     }
-    iframe {
+    img {
+      display: block;
       width: 100%;
       height: 100%;
-      border: none;
+      object-fit: cover; /* Screen ko fit karega */
     }
   </style>
 </head>
 <body>
-<iframe src="https://docs.google.com/gview?url=https://yashagarwal28.github.io/portfolio.pdf&embedded=true" title="Data Analytics Portfolio" allowfullscreen></iframe>
+<img src="portfolio-hero.png" alt="Yash Agarwal Data Analytics Portfolio">
 </body>
 </html>
